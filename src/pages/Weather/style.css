@@ -1,0 +1,30 @@
+.Weather {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.button-home {
+  display: flex;
+  justify-content: right;
+}
+
+.button-home a {
+  background-color: #8922da;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.button-home a:hover {
+  transition: all 0.5s;
+  background-color: #992bed;
+}

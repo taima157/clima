@@ -1,0 +1,45 @@
+.WeatherNextCard {
+  width: 92px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: #1a1a1a93;
+  border: 1px solid #4646462e;
+  border-radius: 5px;
+}
+
+.link-details {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.week {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3355CD;
+}
+
+.max-min {
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.max-min div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.max-min span {
+  color: #B5B5B5;
+}
