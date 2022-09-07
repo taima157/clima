@@ -20,13 +20,11 @@ export default function Weather() {
         );
         const data = await response.data.forecast.forecastday[positionWeek];
         setDetailsCard(<WeatherDetailsCard data={data} cityName={cityName} />);
-        console.log(data);
         if (positionWeek > 6) {
           navigate("/");
           return;
         }
       } catch (error) {
-        console.log(error);
         navigate("/");
       }
     }
