@@ -62,7 +62,6 @@
 
 .temperature-value {
   display: flex;
-  gap: 20px;
 }
 
 .date-change {
@@ -139,7 +138,13 @@
   color: #CC8AFF;
 } 
 
-.more-datails a {
+.more-datails-change {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.more-datails-change a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -154,7 +159,103 @@
   padding: 20px;
   z-index: 2;
   display: flex;
+  width: 100%;
   gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+
+.card-city-next::-webkit-scrollbar {
+  width: 0;
+  height: 10px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+.card-city-next::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+.card-city-next::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 570px) {
+  .city-date h2 {
+    font-size: 24px;
+  }
+
+  .city-date p {
+    font-size: 10px;
+  }
+
+  .current-minmax {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .current-temperature h2 {
+    font-size: 40px;
+  }
+
+  .condition p {
+    font-size: 10px;
+  }
+
+  .details p, .details a {
+    font-size: 12px
+  }
+
+  .details {
+    align-items: center;
+  }
+
+  .condition-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .min-max p {
+    font-size: 24px;
+  }
+
+  .back-image {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .change-unit button {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .city-date h2 {
+    font-size: 18px;
+  }
+
+  .city-date p {
+    font-size: 10px;
+  }
+
+  .current-temperature h2 {
+    font-size: 35px;
+  }
+
+  .condition p {
+    font-size: 8px;
+  }
+
+  .details p, .details a {
+    font-size: 10px
+  }
+
+  .min-max p {
+    font-size: 18px;
+  }
 }

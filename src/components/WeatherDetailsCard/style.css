@@ -69,7 +69,8 @@
 
 .date-change {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 20px;
 }
 
@@ -119,7 +120,7 @@
 
 .details-field {
   font-weight: 600;
-  color: #d7ba81;
+  color: #cc8aff;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -140,7 +141,6 @@
   overflow-y: scroll;
 }
 
-
 .weather-per-hour::-webkit-scrollbar {
   width: 0;
   height: 10px; /* A altura só é vista quando a rolagem é horizontal */
@@ -155,3 +155,67 @@
   background-color: #0f0f0f;
   border-radius: 5px;
 }
+
+@media (max-width: 570px) {
+  
+  .city-condition h1 {
+    font-size: 20px;
+  }
+
+  .date-change h2 {
+    font-size: 18px;
+  }
+
+  .min-max-details span {
+    font-size: 12px;
+  }
+
+  .back-image-detail {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .condition img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .condition p {
+    font-size: 14px;
+  }
+
+  .details-field {
+    font-size: 12px;
+  }
+
+  .change-unit button {
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .city-condition h1 {
+    font-size: 16px;
+  }
+
+  .date-change h2 {
+    font-size: 14px;
+  }
+
+  .condition p {
+    font-size: 10px;
+  }
+
+  .details-field {
+    font-size: 8px;
+  }
+
+  .condition img {
+    width: 30px;
+    height: 30px;
+  }
+}
+

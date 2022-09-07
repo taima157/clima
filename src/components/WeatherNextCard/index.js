@@ -12,12 +12,8 @@ export default function WeatherNextCard(props) {
     function changeWeek() {
       weeks.forEach((day, index) => {
         if (day === props.week) {
-          if (index + props.weekNumber === 7) {
-            setDayWeek(weeks[0]);
-            return;
-          }
-          if (index + props.weekNumber === 8) {
-            setDayWeek(weeks[index - 1]);
+          if (index + props.weekNumber > 6) {
+            setDayWeek(weeks[(index + props.weekNumber) - 7]);
             return;
           }
           setDayWeek(weeks[index + props.weekNumber]);

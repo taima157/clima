@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   background-color: #161616;
+  text-align: center;
 }
 
 .content {
@@ -28,4 +29,10 @@
 .content a:hover {
   transition: all 0.5s;
   border-bottom: 1px solid #5a1a8a;
+}
+
+@media (max-width: 570px) {
+  .content {
+    font-size: 10px;
+  }
 }

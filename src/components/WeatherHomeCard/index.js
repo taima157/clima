@@ -20,7 +20,7 @@ export default function WeatherHomeCard(props) {
               <div className="condition-icon">
                 <img src={weatherData.current.condition.icon} alt="" />
               </div>
-              <p>{weatherData.current.condition.text}</p>
+              <p className="text-condition">{weatherData.current.condition.text}</p>
             </div>
           </div>
           <div className="temperature-value">
@@ -60,15 +60,6 @@ export default function WeatherHomeCard(props) {
                 )}
               </div>
             </div>
-            <div className="change-unit">
-              <button
-                onClick={() => {
-                  celsius ? setCelsius(false) : setCelsius(true);
-                }}
-              >
-                {celsius ? "°F" : "°C"}
-              </button>
-            </div>
           </div>
         </div>
         <div className="details">
@@ -82,8 +73,17 @@ export default function WeatherHomeCard(props) {
               )}
             </p>
           </div>
-          <div className="more-datails">
+          <div className="more-datails-change">
             <Link to={`weather/${weatherData.location.name}/0`}>Details...</Link>
+            <div className="change-unit">
+              <button
+                onClick={() => {
+                  celsius ? setCelsius(false) : setCelsius(true);
+                }}
+              >
+                {celsius ? "°F" : "°C"}
+              </button>
+            </div>
           </div>
         </div>
       </div>
